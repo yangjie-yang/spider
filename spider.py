@@ -26,12 +26,12 @@ def parsePage(ilt, html):
             title = eval(tlt[i].split(':')[1])
             ilt.append([price, title])
     except:
-        print("´íÎó1")
+        print("é”™è¯¯1")
 
 
 def printGoodsList(ilt):
     tplt = "{:4}\t{:8}\t{:16}"
-    print(tplt.format("ĞòºÅ", "ÌâÄ¿", "Ìâ½â"))
+    print(tplt.format("åºå·", "é¢˜ç›®", "é¢˜è§£"))
     count = 0
     for g in ilt:
         count = count + 1
@@ -46,7 +46,7 @@ def main():
         parsePage(infoList, html)
         printGoodsList(infoList)
     except:
-        print("´íÎó2")
+        print("é”™è¯¯2")
     printGoodsList(infoList)
 
 
